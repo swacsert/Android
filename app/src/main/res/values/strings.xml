@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Aplicacion notas</string>
+    <string name="cabecera">Selecciona una categoria para añadir</string>
+    <string name="agregar">+</string>
+    <string name="titulo">Escribe un titulo</string>
+    <string name="categoria">Categoria</string>
+    <string name="nota">nota</string>
+    <string name="id_tv">Id</string>
+    <string name="fechastr">\?</string>
+    <string name="fecha_item">Fecha</string>
+    <string name="nota_item">Nota</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="fecha_por_defecto">Por ejemplo 09-08-2020</string>
+    <string name="btn_guardar_mod">Guardar</string>
+    <string name="btn_borrarmod">Borrar</string>
+    <string name="btn_modificar">Modificar</string>
+    <string name="btn_cancelarmod">Cancelar</string>
+    <string-array name="categoriasejemplo">
+        <item>"Todas las categorías"</item>
+        <item>"Libros"</item>
+        <item>"Citas</item>
+        <item>"Viajes"</item>
+        <item>"Pagos"</item>
+        <item>"Reuniones"</item>
+        <item>"Ejercicios"</item>
+        <item>"Por hacer"</item>
+        <item>"Cumpleaños"</item>
+        <item>"Personalizado"</item>
+    </string-array>
+</resources>

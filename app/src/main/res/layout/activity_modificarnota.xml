@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADADA"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <Spinner
+        android:id="@+id/spinner_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical" />
+
+    <EditText
+        android:id="@+id/et_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/titulo"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/tv_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/radiobutton"
+            android:backgroundTint="#C901A795"
+            android:onClick="onclickmodificarFecha"
+            android:text="@string/fechastr"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_contenido"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:gravity="clip_horizontal"
+        android:hint="@string/nota"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btn_borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/radiobutton"
+            android:onClick="onclickBorrar"
+            android:text="@string/btn_borrarmod"
+            android:textColor="#FFFFFF" />
+
+        <androidx.legacy.widget.Space
+            android:id="@+id/space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/btn_mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/radiobutton"
+            android:onClick="onclickModificar"
+            android:text="@string/btn_modificar"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancelarmod"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/radiobutton"
+        android:onClick="onClickCancel"
+        android:text="@string/btn_cancelarmod"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
